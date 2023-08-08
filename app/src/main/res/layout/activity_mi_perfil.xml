@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MiPerfil">
+
+    <ImageView
+        android:id="@+id/btnatras7"
+        android:layout_width="108dp"
+        android:layout_height="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/izquierda" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="412dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:text="Mi Perfil"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/btnatras7"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="391dp"
+        android:layout_height="570dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:outlineAmbientShadowColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="715dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtnombre3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#575555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtapellidos3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHint="#575555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtpais3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <ImageView
+                    android:id="@+id/btnactualizar2"
+                    android:layout_width="364dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="100dp"
+                    app:srcCompat="@drawable/actualizar" />
+
+                <EditText
+                    android:id="@+id/txtfecha3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:visibility="invisible"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <EditText
+                    android:id="@+id/txtpeso3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/txttelefono3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHint="#575555"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/txtcorreo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    android:textColorHint="#575555"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

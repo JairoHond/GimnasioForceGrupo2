@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityNuevaCarrera"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/btnatras8"
+        android:layout_width="108dp"
+        android:layout_height="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/izquierda" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.gymgp2.UI.DashBoard.DashboardFragment"
+        android:layout_width="387dp"
+        android:layout_height="448dp"
+       >
+
+
+    </androidx.fragment.app.FragmentContainerView>
+
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Comenzar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/gradientbutton"
+        app:backgroundTint="@null" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/textView34"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="28dp"
+           android:layout_marginTop="22dp"
+           android:layout_marginRight="10dp"
+           android:text="Latitud"
+           android:textColor="#FFFFFF"
+           android:textColorHint="#575555"
+           android:textSize="24sp" />
+
+       <TextView
+           android:id="@+id/textView4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="28dp"
+           android:layout_marginTop="12dp"
+           android:layout_marginRight="10dp"
+           android:text="Longitud"
+           android:textColor="#FFFFFF"
+           android:textColorHint="#575555"
+           android:textSize="24sp" />
+
+       <TextView
+           android:id="@+id/textView12"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="28dp"
+           android:layout_marginTop="12dp"
+           android:layout_marginRight="10dp"
+           android:text="Tiempo"
+           android:textColor="#FFFFFF"
+           android:textColorHint="#575555"
+
+           android:textSize="24sp" />
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/txtLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="22dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#575555"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtLon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#575555"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/nctiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#575555"
+            android:textSize="24sp"
+
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/clasinum"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/clasifoto"
+                android:layout_width="58dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/usuario" />
+
+            <TextView
+                android:id="@+id/clasinombre"
+                android:layout_width="131dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|center_vertical"
+                android:text="Victor Hernandez"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/clasikilometros"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|center_vertical"
+                android:text="500.00M"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/clasikcal"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|center_vertical"
+                android:text="150.00k"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                tools:ignore="RtlCompat" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+
